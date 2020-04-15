@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
+## Install Angular
+
+https://victorroblesweb.es/2018/11/20/instalar-angular-7-paso-a-paso/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
