@@ -35,7 +35,7 @@
             <div class="form-group row">
                 <label for="" class="col-form-label col-sm-2">Fecha de creación</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="cliente.fecha_creacion" name="fecha_creacion"
+                    <input type="date" class="form-control" [(ngModel)]="cliente.fecha_creacion" name="fecha_creacion"
                         required #fecha_creacion="ngModel">
                     <div class="alert alert-danger"
                         *ngIf="fecha_creacion.invalid && (fecha_creacion.dirty || fecha_creacion.touched)">
