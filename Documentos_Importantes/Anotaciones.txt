@@ -1,0 +1,12 @@
+-*********************************************************************ANOTACIONES*************************************************************************-
+C:\Windows\System32\drivers\etc\hosts -> 127.0.0.1       musicstore
+
+C:\xampp\apache\conf\extra\httpd-vhosts.conf :
+NameVirtualHost *:80
+	<VirtualHost *:80>
+    ServerAdmin musicstore@gmail.com
+    DocumentRoot "C:/xampp/htdocs/musicstore/public"
+    ServerName musicstore
+    ErrorLog "musicstore.com-error.log"
+    CustomLog "musicstore.com-access.log" common
+</VirtualHost>

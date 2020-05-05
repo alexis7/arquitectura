@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "9db34cf1-5aa1-4781-bd5a-9581a7d8f92d",
+		"name": "StoreMusic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InsertarInstrumento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nombre\":\"Piano Negro\",\r\n\"tipo\":\"Cuerda\",\r\n\"fecha_creacion\":\"2020-04-01\",\r\n\"referencia\":\"A\",\r\n\"cantidad\": \"2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://musicstore/api/inventary/save",
+					"protocol": "http",
+					"host": [
+						"musicstore"
+					],
+					"path": [
+						"api",
+						"inventary",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarTodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://musicstore/api/inventary/searchall",
+					"protocol": "http",
+					"host": [
+						"musicstore"
+					],
+					"path": [
+						"api",
+						"inventary",
+						"searchall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarUno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://musicstore/api/inventary/search/2",
+					"protocol": "http",
+					"host": [
+						"musicstore"
+					],
+					"path": [
+						"api",
+						"inventary",
+						"search",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarInstrumento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://musicstore/api/inventary/delete/5",
+					"protocol": "http",
+					"host": [
+						"musicstore"
+					],
+					"path": [
+						"api",
+						"inventary",
+						"delete",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarInstrumento",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nombre\":\"guitarra\",\r\n\"tipo\":\"electrica\",\r\n\"fecha_creacion\":\"2009-08-08\",\r\n\"referencia\":\"A\",\r\n\"cantidad\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://musicstore/api/inventary/edit/4",
+					"protocol": "http",
+					"host": [
+						"musicstore"
+					],
+					"path": [
+						"api",
+						"inventary",
+						"edit",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
